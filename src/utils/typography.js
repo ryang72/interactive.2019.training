@@ -7,6 +7,9 @@ const typography = new Typography({
     {
       name: 'Libre Baskerville',
       styles: ['400'],
+    }, {
+      name: 'Averia Gruesa Libre',
+      styles: ['400'],
     },
     {
       name: 'Noto Serif',
