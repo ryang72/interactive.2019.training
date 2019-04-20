@@ -39,7 +39,11 @@ const IndexPage = ({ data }) => (
       xPosition={XPosition.Center}
       yPosition={YPosition.Center}
     />
-    <Article dropcap={true} content={data.kerckhoffArticle.content} customTypeComponentMapping={{ pull: FancyPullQuote }} />
+    <Article
+      dropcap={true}
+      content={data.kerckhoffArticle.content}
+      customTypeComponentMapping={{ pull: FancyPullQuote }}
+    />
     <Footer developers="Nathan Smith" copyrightYear={2018} />
   </>
 )
