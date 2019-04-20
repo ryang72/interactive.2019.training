@@ -144,6 +144,14 @@ const IndexPage = ({ data }) => (
       content={data.kerckhoffArticle.content}
       customTypeComponentMapping={{ pull: FancyPullQuote }}
     />
+<<<<<<< HEAD
+=======
+    <Article
+      dropcap={true}
+      content={data.kerckhoffArticle.content}
+      customTypeComponentMapping={{ pull: FancyPullQuote }}
+    />
+>>>>>>> master
     <Footer developers="Nathan Smith" copyrightYear={2018} />
   </>
 )
