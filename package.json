@@ -1,0 +1,44 @@
+{
+  "name": "@dailybruin/gatsby-starter-dailybruin",
+  "description": "The starter kit to make a Daily Bruin online feature.",
+  "version": "1.0.0",
+  "license": "AGPL-3.0",
+  "author": "Daily Bruin Online <online@dailybruin.com>",
+  "scripts": {
+    "start": "gatsby develop --open -p 1234",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "build:prefix-paths": "gatsby build --prefix-paths"
+  },
+  "keywords": [
+    "gatsby",
+    "journalism",
+    "daily bruin"
+  ],
+  "dependencies": {
+    "@dailybruin/gatsby-source-kerckhoff": "1.1.1",
+    "@dailybruin/lux": "1.9.3",
+    "@types/react": "16.7.18",
+    "emotion": "9.2.12",
+    "emotion-server": "9.2.12",
+    "gatsby": "2.0.89",
+    "gatsby-plugin-emotion": "2.0.7",
+    "gatsby-plugin-google-analytics": "2.0.9",
+    "gatsby-plugin-manifest": "2.0.13",
+    "gatsby-plugin-react-helmet": "3.0.5",
+    "gatsby-plugin-typescript": "2.0.3",
+    "gatsby-plugin-typography": "2.2.5",
+    "gatsby-source-published-google-sheets": "1.0.2",
+    "normalize.css": "8.0.1",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-emotion": "9.2.12",
+    "react-helmet": "5.2.0",
+    "react-typography": "0.16.18",
+    "slugify": "1.3.4",
+    "typography": "0.16.18"
+  },
+  "devDependencies": {
+    "prettier": "1.15.3"
+  }
+}
