@@ -1,0 +1,52 @@
+#labelHeader {
+    color: white;
+    margin: auto;
+    /* width: 67%; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: normal;
+    text-align: center;
+}
+
+.run-animation {
+    animation: fadein 2s;
+}
+
+.textDiv {
+    color: white;
+    margin: auto;
+    width: 67%;
+}
+
+.clickP {
+    color: white;
+    margin: 16px auto auto auto;
+    font-family: Pontano Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation: fadein 2s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media only screen and (max-width: 600px) {
+    #labelHeader {
+        font-size: 30px;
+    }
+
+    .textDiv {
+        width: 69%;
+    }
+}
+
+

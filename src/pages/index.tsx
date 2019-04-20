@@ -10,7 +10,9 @@ import {
 } from '@dailybruin/lux'
 import { css } from 'react-emotion'
 import Chevron from '../images/Vector.png'
+import Slideshow from '../components/Slideshow'
 import FancyPullQuote from '../components/FancyPullQuote'
+
 export const query = graphql`
   query {
     site {
@@ -34,7 +36,7 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <>
     <Head {...data.site.siteMetadata} />
-
+    <Slideshow />
     <CoverPhoto
       headline={'Declining Health, Declined Help'}
       authors={data.kerckhoffArticle.author}
@@ -144,14 +146,6 @@ const IndexPage = ({ data }) => (
       content={data.kerckhoffArticle.content}
       customTypeComponentMapping={{ pull: FancyPullQuote }}
     />
-<<<<<<< HEAD
-=======
-    <Article
-      dropcap={true}
-      content={data.kerckhoffArticle.content}
-      customTypeComponentMapping={{ pull: FancyPullQuote }}
-    />
->>>>>>> master
     <Footer developers="Nathan Smith" copyrightYear={2018} />
   </>
 )
