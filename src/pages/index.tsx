@@ -10,7 +10,7 @@ import {
 } from '@dailybruin/lux'
 import { css } from 'react-emotion'
 import Chevron from '../images/Vector.png'
-
+import FancyPullQuote from '../components/FancyPullQuote'
 export const query = graphql`
   query {
     site {
@@ -139,7 +139,11 @@ const IndexPage = ({ data }) => (
         her.’
       </p>
     </div>
-    <Article dropcap={true} content={data.kerckhoffArticle.content} />
+    <Article
+      dropcap={true}
+      content={data.kerckhoffArticle.content}
+      customTypeComponentMapping={{ pull: FancyPullQuote }}
+    />
     <Footer developers="Nathan Smith" copyrightYear={2018} />
   </>
 )
