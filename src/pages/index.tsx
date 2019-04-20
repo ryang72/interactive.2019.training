@@ -8,7 +8,9 @@ import {
   XPosition,
   YPosition,
 } from '@dailybruin/lux'
+import Slideshow from '../components/Slideshow'
 import FancyPullQuote from '../components/FancyPullQuote'
+
 export const query = graphql`
   query {
     site {
@@ -32,6 +34,7 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <>
     <Head {...data.site.siteMetadata} />
+    <Slideshow />
     <CoverPhoto
       headline={data.kerckhoffArticle.headline}
       authors={data.kerckhoffArticle.author}
