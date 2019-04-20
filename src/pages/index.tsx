@@ -8,7 +8,7 @@ import {
   XPosition,
   YPosition,
 } from '@dailybruin/lux'
-
+import FancyPullQuote from '../components/FancyPullQuote'
 export const query = graphql`
   query {
     site {
@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => (
       xPosition={XPosition.Center}
       yPosition={YPosition.Center}
     />
-    <Article dropcap={true} content={data.kerckhoffArticle.content} />
+    <Article dropcap={true} content={data.kerckhoffArticle.content} customTypeComponentMapping={{ pull: FancyPullQuote }} />
     <Footer developers="Nathan Smith" copyrightYear={2018} />
   </>
 )
