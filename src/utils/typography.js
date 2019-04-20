@@ -8,8 +8,16 @@ const typography = new Typography({
       name: 'Libre Baskerville',
       styles: ['400'],
     },
+    {
+      name: 'Noto Serif',
+      styles: ['400'],
+    },
+    {
+      name: 'Pontano Sans',
+      styles: ['400'],
+    },
   ],
-  headerFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: ['Noto Serif', 'serif'],
   bodyFontFamily: ['Libre Baskerville', 'serif'],
 })
 
